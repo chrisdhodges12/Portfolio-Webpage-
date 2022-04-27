@@ -9,7 +9,7 @@
     padding: 0;
 }
 section {
-    padding: 50px;
+    padding: 5px;
 }
 
 /* HEADER START */
@@ -20,35 +20,43 @@ header {
     justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
+    top: 0;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 70%;
     z-index: 9;
+    
 
 
 
 }
 header h1 {
-    padding: 20px 50px;
+    font-size: 40px;
+    padding: 4px 10px;
     color: var(--color3);
-    display: flex;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    
 
 }
 
 header nav {
-    color: var(--color3);
-    flex-wrap: wrap;
-
-header nav ul {
     display: flex;
-    flex-wrap: wrap;
+    padding: 2px 5px;
+    color: var(--color3);
     justify-content: space-between;
     align-items: center;
+}    
+    
+
+
+header nav ul li {
     list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
 }
 
-}
+
 header nav ul li a {
     color: var(--color1);
     font-size: 1.5vw;
@@ -56,6 +64,11 @@ header nav ul li a {
 }
 
 /* HEADER END */
+
+body {
+    background: var(--color1);
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* HERO START */
 
@@ -68,24 +81,25 @@ header nav ul li a {
     align-items: flex-start;
 }
 
-.hero-cta {
-    width: 50%;
-    font-size: 15px;
-    text-align: right;
+.hero-txt {
+    width: 100%;
+    font-size: 25px;
+    padding: 90px;
+    margin: 10px;
+    
+   
 }
 
-.hero-cta h2 {
-    text-align: right;
+.hero-txt h2 {
+    text-decoration:wavy;
+    text-align: end;
 
 
 }
+/* HERO END */
 
 
-body {
-    background: var(--color1);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/* ABOUT ME SECTION BEGIN */
 .about-me {
   
     display: flexbox;
@@ -96,9 +110,8 @@ body {
     color: var(--color2);
     display:block;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items:flex-start;
-    /* border: 2px solid var(--color3); */
     margin: 2px;
     padding: 4px;
     
@@ -108,15 +121,32 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-    border: 2px solid var(--color3);
+   
 }
 .works {
-    /* flex-direction: column; */
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-    border: 2px solid var(--color3);
+   
+    align-items: center;
+    justify-content: space-between;
 
+}
+
+.works img {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ 
+.work1 {
+    width: 100%
+}
+
+.work2 {
+    width: 50%;
 }
 
 .contat-me {
