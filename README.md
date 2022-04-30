@@ -12,7 +12,7 @@ This website displays a portfolio of projects worked on by the author for potent
 
 https://chrisdhodges12.github.io/Portfolio-Webpage-/
 
-<img src="assets/images/website-screenshot.jpg" width="500px" height="400px">
+<img src="assets/images/website-screenshot.jpg" width="600px" height="500px">
 
 
 ##
