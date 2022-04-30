@@ -1,16 +1,14 @@
 :root {
-    --color1: #215b3eb6;
-    --color2: rgba(20, 20, 162, 0.926);
-    --color3: rgba(171, 5, 5, 0.85);
-    --color4: rgba(0, 241, 72, 0.86);
+    --color1: #147142c6;
+    --color2: rgba(0, 40, 240, 0.8);
+    --color3: rgba(193, 6, 6, 0.85);
+    --color4: rgba(0, 123, 164, 0.942);
     --color5: rgba(0, 81, 0, 0.795);
 }
 * {
     margin: 0;
     padding: 0;
-}
-section {
-    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HEADER START */
@@ -34,84 +32,78 @@ header h1 {
     color: var(--color3);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
-
 header nav {
     display: flex;
     padding: 2px 5px;
-    color: var(--color3);
     justify-content: space-between;
     align-items: center;
 }    
-    
-
-
 header nav ul li {
     list-style: none;
     display: inline-block;
     padding: 8px;
     position: relative;
 }
-
-
 header nav ul li a {
-    color: var(--color1);
-    font-size: 1.5vw;
-    
+    color: var(--color3);
+    font-size: 1.5vw; 
 }
-
+header nav ul li a:hover {
+    opacity: 0.7;
+}
 /* HEADER END */
 
 body {
     background: var(--color1);
-    font-family: Arial, Helvetica, sans-serif;
 }
-
-/* HERO START */
+/* HERO SECTION */
 
 .hero {
     color: var(--color3);
     background-image: url("../images/hero.jpg");
     background-size: cover;
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-start;
 }
+.hero img {
+    display: flex;
+    border-radius: 50%;
+    width: 10%;
+    margin: 20px 40px;
+    padding: 20px;
+    align-items: center;
 
+}
 .hero-txt {
     width: 100%;
-    font-size: 25px;
+    font-size: 26px;
     padding: 90px;
-    margin: 10px;
+    margin: 100px;
     text-align: end;
-    color: #ffff;  
+    color: rgba(146, 143, 143, 0.7);  
 }
-/* HERO END */
 
+/* ABOUT ME SECTION  */
 
-/* ABOUT ME SECTION BEGIN */
 .about-me {
     display: flex;
-
-    margin: auto;
 }
 .section-title-about-me {
     color: var(--color2);
     margin: 2px;
     padding: 40px;
     font-size: 30px;
-    
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 .about-me-text{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 100px;
     padding: 20px;
     color: var(--color5);
-   
+    border-left: 2px solid var(--color5);
 }
-
-/* PROJECT SECTION BEGIN */
+/* PROJECT SECTION */
 .section-title-projects {
     color: var(--color2);
     display:flex;
@@ -121,8 +113,8 @@ body {
     margin: 2px;
     padding: 40px;
     font-size: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }    
-
 .projects {
     width: 100%;
     margin: auto;
@@ -131,45 +123,38 @@ body {
     border-top: 2px solid var(--color4);
     border-bottom: 2px solid var(--color4);
     align-items: center;
- 
-
 }
 .projects a {
-    text-decoration: none;
     display: flex;
-    color: var(--color3);
+    flex-wrap: wrap; 
+}
+.projects a:hover {
+    opacity: 0.7;
 
 }
-
 .projects img {
     width: 70%;
     align-items: center;
-    margin: auto;
-    border-radius: 2%;
+    margin: 30px auto 60px auto;
+    padding: 0;
+    border-radius: 3%;  
 }
- 
 .work1 {
- 
     align-items: center;
-    margin: 30px auto;
-   
+    margin: 50px auto;
 }
-
 h4 {
     display: flex;
     justify-content: center;
-    margin: 3px;
-    padding: 3px;
+    margin: 10px;
+    padding: 5px;
     color: var(--color3);
-
+    font-size: 26px;
 }
-
-
 .work2, .work3, .work4, .work5 {
     width: 50%;
-    margin: 30px auto;
+  
 }
-
 
 /* CONTACT ME SECTION BEGIN */
 .section-title-contact-me {
@@ -181,19 +166,24 @@ h4 {
     margin: auto;
     padding: 40px;
     font-size: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }    
-
+h5 {
+    font-size: 20px;
+    display: flex;
+    justify-content:center;
+}
 .contacts {
     display: flex;
-     margin: 20px 10px 20px 0px;
-     text-decoration: none;
-     color: var(--color3);
-     
-
+    margin: 20px 10px 20px 0px;
+    text-decoration: none;
+    color: var(--color3);
 }
 .contacts a {
     color: var(--color3);
-
+}
+.contacts a:hover {
+    color: var(--color2);
 }
 .phone, .email, .github {
     margin: auto;
@@ -211,3 +201,6 @@ footer {
     margin: 50px 0 10px 20px;
     padding: 5px;
 }
+
+/* Media queries */
+@media screen and (max-width: 980px)
