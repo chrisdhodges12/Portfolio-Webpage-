@@ -2,7 +2,8 @@
     --color1: #215b3eb6;
     --color2: rgba(20, 20, 162, 0.926);
     --color3: rgba(171, 5, 5, 0.85);
-
+    --color4: rgba(0, 241, 72, 0.86);
+    --color5: rgba(0, 81, 0, 0.795);
 }
 * {
     margin: 0;
@@ -32,8 +33,6 @@ header h1 {
     padding: 4px 10px;
     color: var(--color3);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    
-
 }
 
 header nav {
@@ -83,15 +82,8 @@ body {
     font-size: 25px;
     padding: 90px;
     margin: 10px;
-    
-   
-}
-
-.hero-txt h2 {
-    text-decoration:wavy;
     text-align: end;
-
-
+    color: #ffff;  
 }
 /* HERO END */
 
@@ -99,18 +91,14 @@ body {
 /* ABOUT ME SECTION BEGIN */
 .about-me {
     display: flex;
-    padding: 2px;
+
+    margin: auto;
 }
 .section-title-about-me {
     color: var(--color2);
-    display:block;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items:flex-start;
     margin: 2px;
     padding: 40px;
     font-size: 30px;
-    
     
 }
 
@@ -118,6 +106,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    padding: 20px;
+    color: var(--color5);
    
 }
 
@@ -135,74 +125,89 @@ body {
 
 .projects {
     width: 100%;
-    margin: 20px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    border-top: 2px solid var(--color4);
+    border-bottom: 2px solid var(--color4);
+    align-items: center;
+ 
 
 }
 .projects a {
     text-decoration: none;
-    color: var(--color3)
+    display: flex;
+    color: var(--color3);
+
 }
 
 .projects img {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
+    width: 70%;
     align-items: center;
     margin: auto;
+    border-radius: 2%;
 }
  
 .work1 {
-    display: flex;
+ 
     align-items: center;
-    margin: 0 auto;
+    margin: 30px auto;
+   
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    padding: 3px;
+    color: var(--color3);
+
 }
 
 
 .work2, .work3, .work4, .work5 {
-    display: flex;
-    display: inline;
-    flex-wrap: wrap;
-    align-items: inline;
     width: 50%;
-    justify-content: space-between;
+    margin: 30px auto;
 }
 
 
 /* CONTACT ME SECTION BEGIN */
 .section-title-contact-me {
     color: var(--color2);
-    display:block;
+    display:flex;
     flex-wrap: wrap;
     justify-content: left;
-    align-items:flex-start;
-    margin: 2px;
+    align-items: flex-start;
+    margin: auto;
     padding: 40px;
     font-size: 30px;
+}    
 
-.contat-me {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    border: 2px solid var(--color3);
-    font-size: 20px;
-
-}
 .contacts {
-    display: inline-flex;
     display: flex;
-     justify-content: space-around;
-     margin: 0 0 20px 0;
+     margin: 20px 10px 20px 0px;
      text-decoration: none;
-     color: var(--color3)
+     color: var(--color3);
+     
+
 }
 .contacts a {
     color: var(--color3);
+
+}
+.phone, .email, .github {
+    margin: auto;
+    padding: 15px;
+    border-left: 2px solid var(--color5);
+    border-right: 2px solid var(--color5);
 }
 
 /* FOOTER */
 footer {
+    display: flex;
+    justify-content: flex-end;
     font-size: 16px;
+    color: var(--color5);
+    margin: 50px 0 10px 20px;
+    padding: 5px;
 }
