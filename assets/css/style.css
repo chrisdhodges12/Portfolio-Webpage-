@@ -1,7 +1,7 @@
 :root {
     --color1: #215b3eb6;
     --color2: rgba(20, 20, 162, 0.926);
-    --color3: rgba(171, 5, 5, 0.918);
+    --color3: rgba(171, 5, 5, 0.85);
 
 }
 * {
@@ -25,9 +25,6 @@ header {
     background-attachment: fixed;
     background-position: 70%;
     z-index: 9;
-    
-
-
 
 }
 header h1 {
@@ -101,59 +98,111 @@ body {
 
 /* ABOUT ME SECTION BEGIN */
 .about-me {
-  
-    display: flexbox;
-    
+    display: flex;
     padding: 2px;
 }
-.section-title {
+.section-title-about-me {
     color: var(--color2);
     display:block;
     flex-wrap: wrap;
     justify-content: left;
     align-items:flex-start;
     margin: 2px;
-    padding: 4px;
+    padding: 40px;
+    font-size: 30px;
+    
     
 }
 
-.flex-row {
+.about-me-text{
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
    
 }
-.works {
-    flex-direction: column;
+
+/* PROJECT SECTION BEGIN */
+.section-title-projects {
+    color: var(--color2);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items:flex-start;
+    margin: 2px;
+    padding: 40px;
+    font-size: 30px;
+}    
+
+.projects {
+    width: 100%;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
-   
-    align-items: center;
     justify-content: space-between;
 
 }
+.projects a {
+    text-decoration: none;
+    color: var(--color3)
+}
 
-.works img {
-    width: 95%;
+.projects img {
     display: flex;
     flex-wrap: wrap;
+    width: 50%;
     align-items: center;
+    margin: auto;
 }
  
 .work1 {
-    width: 100%
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.work2 {
+
+.work2, .work3, .work4, .work5 {
+    display: flex;
+    display: inline;
+    flex-wrap: wrap;
+    align-items: inline;
     width: 50%;
+    justify-content: space-between;
 }
+
+
+/* CONTACT ME SECTION BEGIN */
+.section-title-contact-me {
+    color: var(--color2);
+    display:block;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items:flex-start;
+    margin: 2px;
+    padding: 40px;
+    font-size: 30px;
 
 .contat-me {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
     border: 2px solid var(--color3);
+    font-size: 20px;
 
 }
+.contacts {
+    display: inline-flex;
+    display: flex;
+     justify-content: space-around;
+     margin: 0 0 20px 0;
+     text-decoration: none;
+     color: var(--color3)
+}
+.contacts a {
+    color: var(--color3);
+}
 
+/* FOOTER */
+footer {
+    font-size: 16px;
+}
