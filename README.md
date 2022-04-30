@@ -2,8 +2,7 @@
 
 
 ##Purpose
-A website that delivers solutions to businesses for search engine optimization and social media.
-Enhancements were made to clean up CSS and to improve accesibility for screen readers.  
+This website displays a portfolio of projects worked on by the author for potential employers to view.  It provides methods of contact, a link to the github repositories, and a resume pdf.  
 
 ##Buit With
 *HTML
@@ -11,11 +10,10 @@ Enhancements were made to clean up CSS and to improve accesibility for screen re
 
 ##Website
 
-https://chrisdhodges12.github.io/urban-octo-telegram/
+https://chrisdhodges12.github.io/Portfolio-Webpage-/
 
-<img src="assets/images/Horiseon-screenshot.jpg" width="500px" height="400px">
+<img src="assets/images/website-screenshot.jpg" width="500px" height="400px">
 
 
 ##
-Starter code made by Xandromus (Xander Rapstine).
-Enhancements by Chris Hodges.
+Developed by Chris Hodges 

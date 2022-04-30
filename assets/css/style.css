@@ -27,7 +27,7 @@ header {
 
 }
 header h1 {
-    font-size: 3vw;
+    font-size: 4vw;
     padding: 30px;
     color: var(--color3);
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
@@ -76,7 +76,7 @@ body {
 }
 .hero-txt {
     width: 100%;
-    font-size: 1.7vw;
+    font-size: 2vw;
     padding: 90px;
     margin: 100px;
     text-align: end;
@@ -234,7 +234,6 @@ footer {
     }
     .hero img {
         margin: 80px;
-    }
     }
     .work2, .work3, .work4, .work5 {
         flex: none;
