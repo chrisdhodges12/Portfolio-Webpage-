@@ -4,7 +4,7 @@
 ##Purpose
 This website displays a portfolio of projects worked on by the author for potential employers to view.  It provides methods of contact, a link to the github repositories, and a resume pdf.  
 
-##Buit With
+##Built With
 *HTML
 *CSS
 

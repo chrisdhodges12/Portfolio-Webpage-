@@ -5,13 +5,16 @@
     --color4: rgba(11, 49, 54, 0.75);
     --color5: rgba(18, 48, 75, 0.815);
 }
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /* HEADER START */
+
 header {
     padding: 10px 30px;
     background-image: url("../images/hero.jpg");
@@ -24,47 +27,55 @@ header {
     background-attachment: fixed;
     background-position: 70%;
     z-index: 9;
-
 }
+
 header h1 {
     font-size: 4vw;
     padding: 30px;
     color: var(--color3);
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
 }
+
 header nav {
     display: flex;
     padding: 2px 5px;
     justify-content: space-between;
     align-items: center;
-}    
+}
+
 header nav ul li {
     list-style: none;
     display: inline-block;
     padding: 8px;
     position: relative;
 }
+
 header nav ul li a {
     color: var(--color3);
-    font-size: 1.8vw; 
+    font-size: 1.8vw;
 }
+
 header nav ul li a:hover {
     opacity: 0.7;
 }
+
+
 /* HEADER END */
 
 body {
     background: var(--color1);
 }
+
+
 /* HERO SECTION */
 
 .hero {
-    color: var(--color3);
     background-image: url("../images/hero.jpg");
     background-size: cover;
     display: flex;
     align-items: flex-start;
 }
+
 .hero img {
     display: flex;
     border-radius: 50%;
@@ -74,36 +85,42 @@ body {
     align-items: center;
     opacity: 90%;
 }
+
 .hero-txt {
     width: 100%;
     font-size: 2vw;
     padding: 90px;
     margin: 100px;
     text-align: end;
-    color: rgba(175, 115, 175, 0.8);  
+    color: rgba(175, 115, 175, 0.8);
 }
+
 
 /* ABOUT ME SECTION  */
 
 .about-me {
     display: flex;
 }
+
 .section-title-about-me {
     color: var(--color2);
     margin: 2px;
     padding: 40px;
     font-size: 2vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1h4 {
-        display: flex;
-        justify-content: center;
-        margin: 10px;
-        padding: 5px;
-        color: var(--color3);
-        font-size: 1.5vw;
-        text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-    });
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.about-me-text{
+
+h4 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    color: var(--color3);
+    font-size: 1.5vw;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.about-me-text {
     display: flex;
     flex-wrap: wrap;
     margin: 100px;
@@ -112,18 +129,18 @@ body {
     border-left: 2px solid var(--color5);
     font-size: 1.1vw;
 }
+
+
 /* PROJECT SECTION */
+
 .section-title-projects {
     color: var(--color2);
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items:flex-start;
     margin: 2px;
     padding: 40px;
     font-size: 2vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}    
+}
+
 .projects {
     width: 100%;
     margin: auto;
@@ -132,23 +149,24 @@ body {
     flex-wrap: wrap;
     border-top: 2px solid var(--color4);
     border-bottom: 2px solid var(--color4);
-    align-items: center;
 }
+
 .projects a {
     display: flex;
-    
 }
+
 .projects a:hover {
     opacity: 0.7;
-
 }
+
 .projects img {
     width: 80%;
     align-items: center;
     margin: 30px auto 60px auto;
     padding: 0;
-    border-radius: 3%; 
+    border-radius: 3%;
 }
+
 h4 {
     display: flex;
     justify-content: center;
@@ -158,19 +176,26 @@ h4 {
     font-size: 1.5vw;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
+
 .work1 {
-    width: 100%
+    width: 100%;
     align-items: center;
-    margin: 50px auto;  
+    margin: 50px auto;
 }
-.work2, .work3, .work4, .work5 {
+
+.work2,
+.work3,
+.work4,
+.work5 {
     width: 50%;
 }
 
+
 /* CONTACT ME SECTION BEGIN */
+
 .section-title-contact-me {
     color: var(--color2);
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: left;
     align-items: flex-start;
@@ -178,13 +203,15 @@ h4 {
     padding: 40px;
     font-size: 2vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}    
+}
+
 h5 {
     font-size: 1.5vw;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
+
 .contacts {
     display: flex;
     margin: 20px 10px 20px 0px;
@@ -192,21 +219,28 @@ h5 {
     color: var(--color3);
     font-size: 1.5vw;
 }
+
 .contacts a {
     color: var(--color3);
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
+
 .contacts a:hover {
     color: var(--color2);
 }
-.phone, .email, .github {
-    margin: auto;
+
+.phone,
+.email,
+.github {
+    display: flex;
     padding: 15px;
     border-left: 2px solid var(--color5);
     border-right: 2px solid var(--color5);
 }
 
+
 /* FOOTER */
+
 footer {
     display: flex;
     justify-content: flex-end;
@@ -216,26 +250,32 @@ footer {
     padding: 5px;
 }
 
+
 /* Media queries */
 
-@media all and (min-width: 558px) {
-    .work2, .work3, .work4, .work5 {
-       
-    }  
+@media all and (min-width: 700px) {
+    .work2,
+    .work3,
+    .work4,
+    .work5 {
+        padding: 0;
+    }
     header h1 {
         padding: 10px;
-    }   
-  
+    }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 900px) {
     header h1 {
-        padding: 30px; 
+        padding: 30px;
     }
     .hero img {
         margin: 80px;
     }
-    .work2, .work3, .work4, .work5 {
+    .work2,
+    .work3,
+    .work4,
+    .work5 {
         flex: none;
     }
     footer {
