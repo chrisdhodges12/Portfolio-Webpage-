@@ -14,34 +14,33 @@
 /* HEADER START */
 
 header {
-    padding: 0;
     background-image: url("../images/hero.jpg");
     display: flex;
-    justify-content: space-between;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-size: cover;
     background-attachment: fixed;
     background-position: 70%;
-    z-index: 5;
+    z-index: 9;
 }
 
 header h1 {
     font-size: 3vw;
-    padding: 30px;
+    padding: 2% 10%;
     color: var(--color3);
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.9); 
 }
 
-header nav {
+.navigation {
     display: flex;
-    padding: 2px 5px;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 5%;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 header nav ul li {
+    display: flex;
     list-style: none;
     display: inline-block;
     padding: 10px;
@@ -67,28 +66,27 @@ body {
     background-image: url("../images/hero.jpg");
     background-size: cover;
     display: flex;
-    align-items: flex-start;
-    
 }
 
 .hero img {
     display: flex;
     border-radius: 50%;
-    width: 10%;
-    margin: 20px 40px;
-    padding: 20px;
+    width: 20%;
+    padding: 1%;
     align-items: center;
     opacity: 90%;
 }
 
 .hero-text {
-    width: 100%;
     font-size: 2vw;
-    padding: 90px;
-    margin: 100px;
+    padding: 50px;
+    margin: 60px;
     text-align: end;
     color: rgba(175, 115, 175, 0.8);
+   justify-content: flex-end;
+    align-items: flex-end;
 }
+
 /* ABOUT ME SECTION  */
 
 .about-me {
@@ -145,7 +143,6 @@ h4 {
 .projects a {
     display: flex;
     width: 100%;
-    padding: 20px;
 }
 
 .projects a:hover {
@@ -240,16 +237,13 @@ footer {
 }
 /* Media queries */
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 500px) {
     header h1 {
         margin: 2px;
     }
 
     .navigation {
-       align-items: center;
-        margin: 0;
         width: 100%;
-
     }
 
     .hero {
@@ -299,13 +293,12 @@ footer {
     }
 }    
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
+    header {
+        background-attachment:initial;
+    }
     header h1 {
         padding: 30px;
-    }
-
-    .hero img {
-        margin: 80px;
     }
 
     .projects {
