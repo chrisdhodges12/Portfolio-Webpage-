@@ -1,9 +1,9 @@
-:root {
+        :root {
     --color1: #6c362be9;
     --color2: rgba(30, 6, 78, 0.95);
     --color3: rgba(228, 75, 55, 0.95);
     --color4: rgba(11, 49, 54, 0.75);
-    --color5: rgba(18, 48, 75, 0.815);
+    --color5: rgba(18, 22, 55, 0.9);
 }
 
 * {
@@ -11,12 +11,10 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
 /* HEADER START */
 
 header {
-    padding: 10px 30px;
+    padding: 0;
     background-image: url("../images/hero.jpg");
     display: flex;
     justify-content: space-between;
@@ -26,11 +24,11 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: 70%;
-    z-index: 9;
+    z-index: 5;
 }
 
 header h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     padding: 30px;
     color: var(--color3);
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
@@ -46,7 +44,7 @@ header nav {
 header nav ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px;
+    padding: 10px;
     position: relative;
 }
 
@@ -58,15 +56,11 @@ header nav ul li a {
 header nav ul li a:hover {
     opacity: 0.7;
 }
-
-
 /* HEADER END */
 
 body {
     background: var(--color1);
 }
-
-
 /* HERO SECTION */
 
 .hero {
@@ -74,6 +68,7 @@ body {
     background-size: cover;
     display: flex;
     align-items: flex-start;
+    
 }
 
 .hero img {
@@ -86,7 +81,7 @@ body {
     opacity: 90%;
 }
 
-.hero-txt {
+.hero-text {
     width: 100%;
     font-size: 2vw;
     padding: 90px;
@@ -94,8 +89,6 @@ body {
     text-align: end;
     color: rgba(175, 115, 175, 0.8);
 }
-
-
 /* ABOUT ME SECTION  */
 
 .about-me {
@@ -106,7 +99,7 @@ body {
     color: var(--color2);
     margin: 2px;
     padding: 40px;
-    font-size: 2vw;
+    font-size: 3vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -129,15 +122,13 @@ h4 {
     border-left: 2px solid var(--color5);
     font-size: 1.1vw;
 }
-
-
 /* PROJECT SECTION */
 
 .section-title-projects {
     color: var(--color2);
     margin: 2px;
     padding: 40px;
-    font-size: 2vw;
+    font-size: 3vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -153,6 +144,8 @@ h4 {
 
 .projects a {
     display: flex;
+    width: 100%;
+    padding: 20px;
 }
 
 .projects a:hover {
@@ -189,8 +182,6 @@ h4 {
 .work5 {
     width: 50%;
 }
-
-
 /* CONTACT ME SECTION BEGIN */
 
 .section-title-contact-me {
@@ -201,7 +192,7 @@ h4 {
     align-items: flex-start;
     margin: auto;
     padding: 40px;
-    font-size: 2vw;
+    font-size: 3vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -232,13 +223,11 @@ h5 {
 .phone,
 .email,
 .github {
-    display: flex;
+    margin: auto;
     padding: 15px;
     border-left: 2px solid var(--color5);
     border-right: 2px solid var(--color5);
 }
-
-
 /* FOOTER */
 
 footer {
@@ -249,35 +238,89 @@ footer {
     margin: 50px 0 10px 20px;
     padding: 5px;
 }
-
-
 /* Media queries */
 
-@media all and (min-width: 700px) {
+@media all and (max-width: 700px) {
+    header h1 {
+        margin: 2px;
+    }
+
+    .navigation {
+       align-items: center;
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .hero {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .hero-text {
+        width: 100%;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .hero img {
+        width: 20%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-me-text {
+        font-size: 2vw;
+        margin: 10px;
+    }
+
+    .projects a {
+        width: 100%;
+        padding: 0;
+    }
+
+    .work1 {
+        padding: 0;
+        margin: 0;
+    }
+
     .work2,
     .work3,
     .work4,
     .work5 {
-        padding: 0;
+        padding: 5px;
+        margin: 0;
+        width: 100%;
     }
-    header h1 {
-        padding: 10px;
+
+    .contacts {
+        flex: 0 100%;
     }
-}
+}    
 
 @media screen and (max-width: 900px) {
     header h1 {
         padding: 30px;
     }
+
     .hero img {
         margin: 80px;
     }
+
+    .projects {
+        padding: 0;
+        margin: 0;
+    }
+
     .work2,
     .work3,
     .work4,
     .work5 {
-        flex: none;
+        padding: 5px;
+        margin: 5px;
     }
+
     footer {
         padding: 30px;
     }
