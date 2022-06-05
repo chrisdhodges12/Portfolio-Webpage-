@@ -150,13 +150,16 @@ h4 {
 }
 
 .projects img {
-    width: 80%;
+    width:70%;
     align-items: center;
     margin: 30px auto 60px auto;
     padding: 0;
     border-radius: 3%;
 }
-
+.image {
+    width: 70%;
+    margin:0;
+}
 h4 {
     display: flex;
     justify-content: center;
@@ -166,11 +169,16 @@ h4 {
     font-size: 1.5vw;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
+.works {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .work1 {
     width: 100%;
     align-items: center;
-    margin: 50px auto;
+    margin: none;
 }
 
 .work2,
