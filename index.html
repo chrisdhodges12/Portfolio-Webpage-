@@ -1,126 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio Showcase</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAVIGATION -->
     <header>
-        <h1>
-            <a>Portfolio Showcase</a>
-        </h1>
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="#about-me"> About Me</a>
-                </li>
-                <li>
-                    <a href="#projects"> Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me"> Contact Me</a>
-                </li>
-                <li>
-                    <a href="./assets/images/resume.pdf" alt=""> Resume</a>
-                </li>
-            </ul>
-        </nav>
+      <h1>Portfolio Showcase</h1>
+      <nav class="navigation">
+        <ul class="nav-items">
+          <li>
+            <a href="#about-me"> About Me</a>
+          </li>
+          <li>
+            <a href="#projects"> Work</a>
+          </li>
+          <li>
+            <a href="#contact-me"> Contact Me</a>
+          </li>
+          <li>
+            <a href="./assets/images/resume.pdf" alt=""> Resume</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- HERO  -->
-    <section class="hero"> 
-        <div class="hero-text">
-            <img src="./assets/images/mypic.jpg" alt="">
-            <h2>Projects by Chris Hodges</h2>  
-        </div>
+    <section class="hero">
+      <div class="hero-text">
+        <img src="./assets/images/mypic.jpg" alt="" />
+        <h2>Projects by Chris Hodges</h2>
+      </div>
     </section>
 
     <!-- ABOUT ME -->
     <section id="about-me" class="about-me">
-        <h3 class="section-title-about-me">
-            About Me
-        </h3>
-        <div class="about-me-text">
-            <p>
-                Hello, my name is Chris Hodges. I graduated from Appalachian State University with a Bachelor's in chemistry. I have taken on the challenge of a coding bootcamp to learn the skills required to pursue a job in web development.
-            </p>
-            <br>
-            <p>
-                I have worked for a moving company for quite some time. I enjoy playing many different musical instruments, video games, and being a father. I hope that the viewer of this site enjoys the work samples I have compiled thus far in my journey.
-            </p>
-        </div>
+      <h3 class="section-title-about-me">About Me</h3>
+      <div class="about-me-text">
+        <p>
+          Hello, my name is Chris Hodges. I graduated from Appalachian State
+          University with a Bachelor's in chemistry. I am now taking on the
+          challenge of becoming a web developer.
+        </p>
+        <br />
+        <p>
+          I have worked for a moving company for quite some time. I enjoy
+          playing many different musical instruments, video games, and being a
+          father. I hope that the viewer of this site enjoys the work samples I
+          have compiled thus far in my journey.
+        </p>
+      </div>
     </section>
 
     <!-- PROJECT SECTION-->
     <div id="projects" class="projects">
-        <div>
-            <h3 class="section-title-projects">
-                Projects
-            </h3>
+      <div>
+        <h3 class="section-title-projects">Projects</h3>
+      </div>
+      <div class="works">
+        <div class="work1">
+          <h4>Travel Size Blog</h4>
+          <a class="image" href="https://dry-refuge-26643.herokuapp.com/">
+            <img src="assets/images/travelsize.jpg" alt="" />
+          </a>
         </div>
-        <div class="works">
-            <div class="work1">
-                <h4>Whats For Dinner?</h4>
-                <a class="image" href="https://nmsiegel1.github.io/Whats-for-dinner/">
-                    <img src="assets/images/whats_for_dinner.jpg" alt="" />
-                </a>
-            </div>
-            <div class="work2">
-                <h4>Featured Project: Run Buddy</h4>
-                <a class="image" href="https://chrisdhodges12.github.io/run-buddy/">
-                    <img src=" ./assets/images/runbuddy.jpg" alt="" />
-                </a>
-            </div>
-            <div class="work3">
-                <h4>Horiseon </h4>
-                <a class="image" href="https://chrisdhodges12.github.io/Horiseon-challenge-1/">
-                    <img src=" ./assets/images/horiseon.jpg" alt="" />
-                </a>
-            </div>
-            <div class="work4">
-                <h4>Coming soon!</h4>
-                <a class="image" href="https://youtu.be/dQw4w9WgXcQ">
-                    <img src=" ./assets/images/conference.jpg" alt="" />
-                </a>
-            </div>
-            <div class="work5">
-                <h4>Coming soon!</h4>
-                <a class="image" href="https://youtu.be/dQw4w9WgXcQ">
-                    <img src=" ./assets/images/coffee.jpg" alt="" />
-                </a>
-            </div>
-            
+        <div class="work2-5">
+          <div class="work2">
+            <h4>Whats For Dinner?</h4>
+            <a
+              class="image"
+              href="https://nmsiegel1.github.io/Whats-for-dinner/"
+            >
+              <img src="assets/images/whats_for_dinner.jpg" alt="" />
+            </a>
+          </div>
+          <div class="work3">
+            <h4>Coming soon!</h4>
+            <a class="image" href="https://chrisdhodges12.github.io/run-buddy/">
+              <img src=" ./assets/images/coffee.jpg" alt="" />
+            </a>
+          </div>
+          <div class="work4">
+            <h4>Coming soon!</h4>
+            <a
+              class="image"
+              href="https://chrisdhodges12.github.io/Horiseon-challenge-1/"
+            >
+              <img src=" ./assets/images/coffee.jpg" alt="" />
+            </a>
+          </div>
+          <div class="work5">
+            <h4>Coming soon!</h4>
+            <a class="image" href="https://youtu.be/dQw4w9WgXcQ">
+              <img src=" ./assets/images/coffee.jpg" alt="" />
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- CONTACT ME -->
     <section id="contact-me" class="contact-me">
-        <h3 class="section-title-contact-me">
-            Contact Me
-        </h3>
-        <div class="contacts">
-            <div class="phone">
-                <h5>Phone</h5>
-                <a href="tel:919-360-6858">919-360-6858 </a>
-            </div>
-            <div class="email">
-                <h5>Email</h5>
-                <a href="mailto:chrisdhodges12@gmail.com"> chrisdhodges12@gmail.com</a>
-            </div>
-            <div class="github">
-                <h5>Github</h5>
-                <a href="https://github.com/chrisdhodges12/">https://github.com/chrisdhodges12/</a>
-            </div>
+      <h3 class="section-title-contact-me">Contact Me</h3>
+      <div class="contacts">
+        <div class="phone">
+          <h5>Phone</h5>
+          <a href="tel:919-360-6858">919-360-6858 </a>
         </div>
+        <div class="email">
+          <h5>Email</h5>
+          <a href="mailto:chrisdhodges12@gmail.com">
+            chrisdhodges12@gmail.com</a
+          >
+        </div>
+        <div class="github">
+          <h5>Github</h5>
+          <a href="https://github.com/chrisdhodges12/"
+            >https://github.com/chrisdhodges12/</a
+          >
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 
-<footer>
-    I do not claim the rights to Run Buddy or Horiseon. Code was provided by UNC Bootcamp.
-</footer>
-
+  <footer>&copy Chris Hodges</footer>
 </html>
